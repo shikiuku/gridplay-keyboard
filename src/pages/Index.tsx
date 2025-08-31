@@ -8,18 +8,18 @@ const Index = () => {
   const [gap, setGap] = useState(4);
 
   return (
-    <div className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <div className="container mx-auto p-6">
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Keyboard Layout Editor
           </h1>
           <p className="text-muted-foreground">
-            Create and customize your keyboard layout with drag & drop
+            キーボードレイアウトをドラッグ＆ドロップでカスタマイズ
           </p>
         </header>
 
-        <div className="flex gap-8 items-start justify-center">
+        <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
           <GridControls
             rows={rows}
             columns={columns}
@@ -29,14 +29,16 @@ const Index = () => {
             onGapChange={setGap}
           />
           
-          <KeyboardGrid
-            rows={rows}
-            columns={columns}
-            gap={gap}
-          />
+          <div className="flex-1 max-w-none">
+            <KeyboardGrid
+              rows={rows}
+              columns={columns}
+              gap={gap}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

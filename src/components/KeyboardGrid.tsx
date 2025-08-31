@@ -121,8 +121,8 @@ const KeyboardGrid: React.FC<KeyboardGridProps> = ({ rows, columns, gap }) => {
   const occupiedCells = getOccupiedCells();
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-background p-8">
-      <div 
+    <div className="flex justify-center items-start bg-background p-4">
+      <div
         ref={gridRef}
         className="relative bg-grid-bg border border-grid-border rounded-lg p-4"
         style={{ 
