@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				/* Keyboard editor custom colors */
+				'grid-bg': 'hsl(var(--grid-background))',
+				'grid-border': 'hsl(var(--grid-border))',
+				'grid-add': 'hsl(var(--grid-add-button))',
+				'grid-add-hover': 'hsl(var(--grid-add-button-hover))',
+				'key-bg': 'hsl(var(--key-background))',
+				'key-border': 'hsl(var(--key-border))',
+				'key-shadow': 'hsl(var(--key-shadow))',
+				'resize-handle': 'hsl(var(--resize-handle))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
